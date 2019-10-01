@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ListsService } from '../../services/lists.service';
 
 @Component({
   selector: 'app-board',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./board.component.scss']
 })
 export class BoardComponent implements OnInit {
+  @Input() public searchCriterion: string;
+  public lists: any[];
 
-  constructor() { }
+  constructor(private listsService: ListsService) { }
 
-  ngOnInit() {
+  public ngOnInit(): void {
+    this.lists = this.listsService.lists;
+  }
+
+  public removeCard(args) {
+    this.listsService.removeCard(args);
   }
 
 }

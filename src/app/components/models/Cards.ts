@@ -5,7 +5,7 @@ export interface Card {
   name: string;
   description: string;
   dueDate?: Date | string;
-  assignee?: User;
+  assignee?: User | object;
 }
 
 export interface CardList {
