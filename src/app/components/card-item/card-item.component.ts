@@ -20,7 +20,6 @@ export class CardItemComponent implements Card {
   @Output() public removeCard = new EventEmitter<any>();
 
   public onRemove() {
-    console.log('this.card', this.card);
     this.removeCard.emit(this.card);
   }
 

@@ -1,5 +1,4 @@
 import {Injectable} from '@angular/core';
-import User from '../components/models/User';
 
 @Injectable({
   providedIn: 'root'
@@ -44,19 +43,19 @@ export class ListsService {
         {
           name: 'Task 4',
           description: 'Description 4',
-          dueDate: new Date('02 October 2019').toDateString(),
+          dueDate: new Date('03 October 2019').toDateString(),
           assignee: this.user,
         },
         {
           name: 'Task 5',
           description: 'Description 5',
-          dueDate: new Date('02 October 2019').toDateString(),
+          dueDate: new Date('04 October 2019').toDateString(),
           assignee: this.user,
         },
         {
           name: 'Task 6',
           description: 'Description 6',
-          dueDate: new Date('02 October 2019').toDateString(),
+          dueDate: new Date('10 October 2019').toDateString(),
           assignee: this.user,
         },
       ]
@@ -68,19 +67,19 @@ export class ListsService {
         {
           name: 'Task 7',
           description: 'Description 7',
-          dueDate: new Date('02 October 2019').toDateString(),
+          dueDate: new Date('01 October 2019').toDateString(),
           assignee: this.user,
         },
         {
           name: 'Task 8',
           description: 'Description 8',
-          dueDate: new Date('02 October 2019').toDateString(),
+          dueDate: new Date('01 October 2019').toDateString(),
           assignee: this.user,
         },
         {
           name: 'Task 9',
           description: 'Description 9',
-          dueDate: new Date('02 October 2019').toDateString(),
+          dueDate: new Date('01 October 2019').toDateString(),
           assignee: this.user,
         },
       ]

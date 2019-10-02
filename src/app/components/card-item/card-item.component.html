@@ -4,7 +4,7 @@
         <span class="title">{{ card.name }}</span>
       </mat-expansion-panel-header>
       <p>{{ card.description }}</p>
-      <p>{{ card.dueDate }}</p>
+      <p>{{ card.dueDate | date }}</p>
       <p>{{ card.assignee.firstName }} {{ card.assignee.lastName }}</p>
       <button mat-stroked-button color="basic" class="button">Edit</button>
       <button mat-raised-button color="accent" class="button" (click)="onRemove()">Remove</button>
