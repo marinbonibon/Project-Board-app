@@ -1,8 +1,8 @@
 <div class="board">
   <app-card-list
-    [searchCriterion]="searchCriterion"
     *ngFor="let list of lists"
     [list]="list"
+    [searchCriterion]="searchCriterion"
     (removeCard)="removeCard($event)">
   </app-card-list>
 </div>

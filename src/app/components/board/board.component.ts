@@ -7,7 +7,7 @@ import { ListsService } from '../../services/lists.service';
   styleUrls: ['./board.component.scss']
 })
 export class BoardComponent implements OnInit {
-  @Input() public searchCriterion: string;
+  @Input() searchCriterion: string;
   public lists: any[];
 
   constructor(private listsService: ListsService) { }

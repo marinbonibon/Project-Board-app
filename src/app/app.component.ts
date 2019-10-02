@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Project-Board-app';
+  public searchCriterion: string;
+
+  public onSearch(criterion) {
+    this.searchCriterion = criterion;
+  }
 }
