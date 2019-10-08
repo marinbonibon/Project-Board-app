@@ -1,13 +1,13 @@
- <mat-accordion class="card">
-    <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <span class="title">{{ card.name }}</span>
-      </mat-expansion-panel-header>
-      <p>{{ card.description }}</p>
-      <p>{{ card.dueDate | date }}</p>
-      <p>{{ card.assignee.firstName }} {{ card.assignee.lastName }}</p>
-      <button mat-stroked-button color="basic" class="button">Edit</button>
-      <button mat-raised-button color="accent" class="button" (click)="onRemove()">Remove</button>
-    </mat-expansion-panel>
-  </mat-accordion>
+<mat-accordion class="card">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+        <span class="title" [ngClass]="{done:isDoneSection}">{{ card.name }}</span>
+    </mat-expansion-panel-header>
+    <p>{{ card.description }}</p>
+    <p>{{ card.dueDate | date }}</p>
+    <p>{{ card.assignee.firstName }} {{ card.assignee.lastName }}</p>
+    <button mat-stroked-button color="basic" class="button">Edit</button>
+    <button mat-raised-button color="accent" class="button" (click)="onRemove()">Remove</button>
+  </mat-expansion-panel>
+</mat-accordion>
 

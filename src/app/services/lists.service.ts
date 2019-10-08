@@ -34,7 +34,8 @@ export class ListsService {
           dueDate: new Date('02 October 2019').toDateString(),
           assignee: this.user,
         },
-      ]
+      ],
+      isDoneSection: false
     },
     {
       id: '2',
@@ -58,7 +59,8 @@ export class ListsService {
           dueDate: new Date('10 October 2019').toDateString(),
           assignee: this.user,
         },
-      ]
+      ],
+      isDoneSection: false
     },
     {
       id: '3',
@@ -82,7 +84,8 @@ export class ListsService {
           dueDate: new Date('01 October 2019').toDateString(),
           assignee: this.user,
         },
-      ]
+      ],
+      isDoneSection: true
     },
   ];
 

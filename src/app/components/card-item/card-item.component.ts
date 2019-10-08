@@ -16,10 +16,11 @@ export class CardItemComponent implements Card {
   assignee?: User | object;
 
   @Input() public card: any;
-  @Input() public isDone: boolean;
+  @Input() public isDoneSection: boolean;
   @Output() public removeCard = new EventEmitter<any>();
 
   public onRemove() {
+    console.log('isDoneSection', this.isDoneSection);
     this.removeCard.emit(this.card);
   }
 
