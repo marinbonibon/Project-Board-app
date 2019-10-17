@@ -19,6 +19,7 @@ import { CardListComponent } from './components/card-list/card-list.component';
 import { CardItemComponent } from './components/card-item/card-item.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FilterPipe } from './pipes/filter.pipe';
+import { ChangeBgDirective } from './directives/change-bg.directive';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FilterPipe } from './pipes/filter.pipe';
     CardListComponent,
     CardItemComponent,
     FooterComponent,
-    FilterPipe
+    FilterPipe,
+    ChangeBgDirective
   ],
   imports: [
     BrowserModule,
