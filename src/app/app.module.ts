@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { BoardModule } from './board/board.module';
+import { AuthModule } from './auth/auth.module';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { BoardModule } from './board/board.module';
     AppRoutingModule,
     CoreModule,
     BoardModule,
+    AuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
